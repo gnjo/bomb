@@ -33,7 +33,15 @@ bom decolation
 壁・壁'
 ```
 ```
-mapfill(cx,cy,deco)
+let mapfill=(bm,x,y,deco)=>{
+deco.split('\n').map((d,i)=>{
+ d.split('').map((d,j)=>{
+  let f=!((y+i>40)||(x+j>40)) && d!='＋'
+  if(f)bm[y+i][x+j]=d
+ }
+})
+ return bm;
+}
 ```
 ```
 (Array(40*40+1).join('壁')).match(/.{1,40}/g)
