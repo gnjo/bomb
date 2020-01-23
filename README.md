@@ -37,4 +37,10 @@ mapfill(cx,cy,deco)
 ```
 ```
 (Array(40*40+1).join('壁')).match(/.{1,40}/g)
+
+fn.randi=(min, max)=>{//int and include the max
+  let a =Math.ceil(min) ,b= Math.floor(max||0);
+  min=Math.min(a,b),max=Math.max(a,b)
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 ```
