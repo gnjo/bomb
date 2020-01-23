@@ -34,5 +34,8 @@ bom decolation
 壁・壁'
 ```
 ```
+mapfill(cx,cy,deco)
+```
+```
 (Array(40*40+1).join('壁')).match(/.{1,40}/g)
 ```
