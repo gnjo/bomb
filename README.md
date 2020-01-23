@@ -1,6 +1,6 @@
 # bomb
 random dungeon maker
-
+https://codepen.io/gnjo/pen/gObqWae
 ```
 1. size 40*40
 2. decide the bom number 2-20
